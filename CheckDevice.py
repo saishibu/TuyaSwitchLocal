@@ -1,4 +1,4 @@
-import tinytuya
+import tinytuya,json
 
 # tinytuya.set_debug(True)
 
@@ -11,5 +11,6 @@ c = tinytuya.Cloud(
 devices = c.getdevices()
 # print("Device List: %r" % devices)
 
-result = c.getstatus("8062300084cca891796a")
+result = json.loads(c.getstatus("8062300084cca891796a"))
 print("Status of device:\n", result)
+print(result["result"])
