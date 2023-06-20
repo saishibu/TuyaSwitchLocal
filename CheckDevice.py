@@ -8,7 +8,7 @@ c = tinytuya.Cloud(
         apiSecret="cff6cca0f15346f682b59ea86123f56c", 
         apiDeviceID="8062300084cca891796a")
 
-# devices = c.getdevices()
+devices = c.getdevices()
 # print("Device List: %r" % devices)
 
 result = c.getstatus(id)
