@@ -11,5 +11,5 @@ c = tinytuya.Cloud(
 devices = c.getdevices()
 # print("Device List: %r" % devices)
 
-result = c.getstatus(id)
+result = c.getstatus("8062300084cca891796a")
 print("Status of device:\n", result)
