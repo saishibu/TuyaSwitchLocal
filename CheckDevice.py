@@ -13,4 +13,5 @@ devices = c.getdevices()
 
 result = c.getstatus("8062300084cca891796a")
 print("Status of device:\n", result)
-print(result["result"])
+sw1 = result["result"][0]['value']
+print(sw1)
